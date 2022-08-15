@@ -1,0 +1,80 @@
+[
+    {
+        "description": "bert: 1a; probes 0",
+        "predictions_filepath": "~/huggingface/ISWS/data/predictions/bert/1a/probes_0.csv",
+        "labels_filepath": "~/huggingface/ISWS/data/labelled_data/ml25m.csv",
+        "output_filepath": "~/huggingface/ISWS/data/r_values/bert/1a/probes_0.csv"
+    },
+    {
+        "description": "bert: 1a; probes 1",
+        "predictions_filepath": "~/huggingface/ISWS/data/predictions/bert/1a/probes_1.csv",
+        "labels_filepath": "~/huggingface/ISWS/data/labelled_data/ml25m.csv",
+        "output_filepath": "~/huggingface/ISWS/data/r_values/bert/1a/probes_1.csv"
+    },
+    {
+        "description": "bert: 1a; probes 2",
+        "predictions_filepath": "~/huggingface/ISWS/data/predictions/bert/1a/probes_2.csv",
+        "labels_filepath": "~/huggingface/ISWS/data/labelled_data/ml25m.csv",
+        "output_filepath": "~/huggingface/ISWS/data/r_values/bert/1a/probes_2.csv"
+    },
+    {
+        "description": "bert: 1a; probes 3",
+        "predictions_filepath": "~/huggingface/ISWS/data/predictions/bert/1a/probes_3.csv",
+        "labels_filepath": "~/huggingface/ISWS/data/labelled_data/ml25m.csv",
+        "output_filepath": "~/huggingface/ISWS/data/r_values/bert/1a/probes_3.csv"
+    },
+    {
+        "description": "bert: 1a; probes 4",
+        "predictions_filepath": "~/huggingface/ISWS/data/predictions/bert/1a/probes_4.csv",
+        "labels_filepath": "~/huggingface/ISWS/data/labelled_data/ml25m.csv",
+        "output_filepath": "~/huggingface/ISWS/data/r_values/bert/1a/probes_4.csv"
+    },
+    {
+        "description": "bert: 1a; probes 5",
+        "predictions_filepath": "~/huggingface/ISWS/data/predictions/bert/1a/probes_5.csv",
+        "labels_filepath": "~/huggingface/ISWS/data/labelled_data/ml25m.csv",
+        "output_filepath": "~/huggingface/ISWS/data/r_values/bert/1a/probes_5.csv"
+    },
+    {
+        "description": "bert: 1a; probes 6",
+        "predictions_filepath": "~/huggingface/ISWS/data/predictions/bert/1a/probes_6.csv",
+        "labels_filepath": "~/huggingface/ISWS/data/labelled_data/ml25m.csv",
+        "output_filepath": "~/huggingface/ISWS/data/r_values/bert/1a/probes_6.csv"
+    },
+    {
+        "description": "bert: 1a; probes 7",
+        "predictions_filepath": "~/huggingface/ISWS/data/predictions/bert/1a/probes_7.csv",
+        "labels_filepath": "~/huggingface/ISWS/data/labelled_data/ml25m.csv",
+        "output_filepath": "~/huggingface/ISWS/data/r_values/bert/1a/probes_7.csv"
+    },
+    {
+        "description": "bert: 1a; probes 8",
+        "predictions_filepath": "~/huggingface/ISWS/data/predictions/bert/1a/probes_8.csv",
+        "labels_filepath": "~/huggingface/ISWS/data/labelled_data/ml25m.csv",
+        "output_filepath": "~/huggingface/ISWS/data/r_values/bert/1a/probes_8.csv"
+    },
+    {
+        "description": "bert: 1a; probes 9",
+        "predictions_filepath": "~/huggingface/ISWS/data/predictions/bert/1a/probes_9.csv",
+        "labels_filepath": "~/huggingface/ISWS/data/labelled_data/ml25m.csv",
+        "output_filepath": "~/huggingface/ISWS/data/r_values/bert/1a/movies_9.csv"
+    },
+    {
+        "description": "bert: 1b; probes 0",
+        "predictions_filepath": "~/huggingface/ISWS/data/predictions/bert/1b/probes_0.csv",
+        "labels_filepath": "~/huggingface/ISWS/data/labelled_data/ml25m.csv",
+        "output_filepath": "~/huggingface/ISWS/data/r_values/bert/1b/probes_0.csv"
+    },
+    {
+        "description": "bert: 1b; probes 1",
+        "predictions_filepath": "~/huggingface/ISWS/data/predictions/bert/1b/probes_1.csv",
+        "labels_filepath": "~/huggingface/ISWS/data/labelled_data/ml25m.csv",
+        "output_filepath": "~/huggingface/ISWS/data/r_values/bert/1b/probes_1.csv"
+    },
+    {
+        "description": "bert: 1b; probes 2",
+        "predictions_filepath": "~/huggingface/ISWS/data/predictions/bert/1b/probes_2.csv",
+        "labels_filepath": "~/huggingface/ISWS/data/labelled_data/ml25m.csv",
+        "output_filepath": "~/huggingface/ISWS/data/r_values/bert/1b/probes_2.csv"
+    }
+]

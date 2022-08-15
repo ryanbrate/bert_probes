@@ -1,0 +1,24 @@
+{
+    "description": "1:  movie data: columns renamed, take first of 'cast member'",
+    "apply_to_columns": {
+        "lambda x: x.split(',')[0]": [
+            "cast member"
+        ],
+        "lambda x: int(x)": [
+            "year"
+        ]
+    },
+    "column_name_changes": {
+        "mlId": "ID",
+        "cast member": "starring",
+        "year": "released",
+        "director": "directed by",
+        "producer": "produced by",
+        "film editor": "edited by",
+        "movieLabel": "__name__",
+        "composer": "music by",
+        "country of origin": "originating from"
+    },
+    "input_file": "~/huggingface/ISWS/data/wikidata_extracts_subset/movie_data.csv",
+    "output_file": "~/huggingface/ISWS/data/formatted_subset/1/movie_data.csv"
+}

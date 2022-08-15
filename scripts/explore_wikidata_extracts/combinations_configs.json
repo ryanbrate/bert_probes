@@ -1,0 +1,18 @@
+[
+    {
+        "n": 10,
+        "input_file": "~/huggingface/ISWS/data/wikidata_extracts/movie_data.csv",
+        "columns_of_interest": [
+            "year",
+            "movieLabel",
+            "cast member",
+            "country of origin",
+            "director",
+            "producer",
+            "distributed by",
+            "film editor",
+            "screenwriter",
+            "composer"
+        ]
+    }
+]

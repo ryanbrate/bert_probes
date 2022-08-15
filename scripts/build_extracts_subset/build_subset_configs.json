@@ -1,0 +1,20 @@
+[
+    {
+        "description": "movies",
+        "properties": [
+            "mlId",
+            "movieLabel",
+            "year",
+            "cast member",
+            "country of origin",
+            "director",
+            "producer",
+            "distributed by",
+            "film editor",
+            "screenwriter",
+            "composer"
+        ],
+        "input_file": "~/huggingface/ISWS/data/wikidata_extracts/movie_data.csv",
+        "output_file": "~/huggingface/ISWS/data/wikidata_extracts_subset/movie_data.csv"
+    }
+]
