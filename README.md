@@ -1,3 +1,4 @@
+A pipeline to explore wikidata extracts and property co-occurrence, build a subset of wikidata, build plm mask prediction statements, probe hugging face models and calculate resulting R@n scores.
 
 # 1. Explore property co-occurrence counts for wikidata extracts
 
