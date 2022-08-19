@@ -62,8 +62,8 @@ def main():
         output_filepath.parent.mkdir(exist_ok=True, parents=True)
         df_combined.to_csv(output_filepath, index=False, sep='\t')
 
-        # save global summary
-        pd.DataFrame(r_values).to_csv(output_filepath.parent / "summary.csv")
+    # save global summary
+    pd.DataFrame(r_values).to_csv(output_filepath.parent.parent / "summary.csv")
 
         
 

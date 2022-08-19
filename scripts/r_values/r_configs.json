@@ -57,24 +57,79 @@
         "description": "bert: 1a; probes 9",
         "predictions_filepath": "~/huggingface/ISWS/data/predictions/bert/1a/probes_9.csv",
         "labels_filepath": "~/huggingface/ISWS/data/labelled_data/ml25m.csv",
-        "output_filepath": "~/huggingface/ISWS/data/r_values/bert/1a/movies_9.csv"
+        "output_filepath": "~/huggingface/ISWS/data/r_values/bert/1a/probes_9.csv"
     },
     {
-        "description": "bert: 1b; probes 0",
-        "predictions_filepath": "~/huggingface/ISWS/data/predictions/bert/1b/probes_0.csv",
+        "description": "bert: 2a; probes 0",
+        "predictions_filepath": "~/huggingface/ISWS/data/predictions/bert/2a/probes_0.csv",
         "labels_filepath": "~/huggingface/ISWS/data/labelled_data/ml25m.csv",
-        "output_filepath": "~/huggingface/ISWS/data/r_values/bert/1b/probes_0.csv"
+        "output_filepath": "~/huggingface/ISWS/data/r_values/bert/2a/probes_0.csv"
     },
     {
-        "description": "bert: 1b; probes 1",
-        "predictions_filepath": "~/huggingface/ISWS/data/predictions/bert/1b/probes_1.csv",
+        "description": "bert: 2a; probes 1",
+        "predictions_filepath": "~/huggingface/ISWS/data/predictions/bert/2a/probes_1.csv",
         "labels_filepath": "~/huggingface/ISWS/data/labelled_data/ml25m.csv",
-        "output_filepath": "~/huggingface/ISWS/data/r_values/bert/1b/probes_1.csv"
+        "output_filepath": "~/huggingface/ISWS/data/r_values/bert/2a/probes_1.csv"
     },
     {
-        "description": "bert: 1b; probes 2",
-        "predictions_filepath": "~/huggingface/ISWS/data/predictions/bert/1b/probes_2.csv",
+        "description": "bert: 2a; probes 2",
+        "predictions_filepath": "~/huggingface/ISWS/data/predictions/bert/2a/probes_2.csv",
         "labels_filepath": "~/huggingface/ISWS/data/labelled_data/ml25m.csv",
-        "output_filepath": "~/huggingface/ISWS/data/r_values/bert/1b/probes_2.csv"
+        "output_filepath": "~/huggingface/ISWS/data/r_values/bert/2a/probes_2.csv"
+    },
+    {
+        "description": "bert: 2a; probes 3",
+        "predictions_filepath": "~/huggingface/ISWS/data/predictions/bert/2b/probes_3.csv",
+        "labels_filepath": "~/huggingface/ISWS/data/labelled_data/ml25m.csv",
+        "output_filepath": "~/huggingface/ISWS/data/r_values/bert/2b/probes_3.csv"
+    },
+    {
+        "description": "bert: 2b; probes 0",
+        "predictions_filepath": "~/huggingface/ISWS/data/predictions/bert/2b/probes_0.csv",
+        "labels_filepath": "~/huggingface/ISWS/data/labelled_data/ml25m.csv",
+        "output_filepath": "~/huggingface/ISWS/data/r_values/bert/2b/probes_0.csv"
+    },
+    {
+        "description": "bert: 2b; probes 1",
+        "predictions_filepath": "~/huggingface/ISWS/data/predictions/bert/2b/probes_1.csv",
+        "labels_filepath": "~/huggingface/ISWS/data/labelled_data/ml25m.csv",
+        "output_filepath": "~/huggingface/ISWS/data/r_values/bert/2b/probes_1.csv"
+    },
+    {
+        "description": "bert: 2b; probes 2",
+        "predictions_filepath": "~/huggingface/ISWS/data/predictions/bert/2b/probes_2.csv",
+        "labels_filepath": "~/huggingface/ISWS/data/labelled_data/ml25m.csv",
+        "output_filepath": "~/huggingface/ISWS/data/r_values/bert/2b/probes_2.csv"
+    },
+    {
+        "description": "bert: 2b; probes 3",
+        "predictions_filepath": "~/huggingface/ISWS/data/predictions/bert/2b/probes_3.csv",
+        "labels_filepath": "~/huggingface/ISWS/data/labelled_data/ml25m.csv",
+        "output_filepath": "~/huggingface/ISWS/data/r_values/bert/2b/probes_3.csv"
+    },
+    {
+        "description": "bert: 2c; probes 0",
+        "predictions_filepath": "~/huggingface/ISWS/data/predictions/bert/2c/probes_0.csv",
+        "labels_filepath": "~/huggingface/ISWS/data/labelled_data/ml25m.csv",
+        "output_filepath": "~/huggingface/ISWS/data/r_values/bert/2c/probes_0.csv"
+    },
+    {
+        "description": "bert: 2c; probes 1",
+        "predictions_filepath": "~/huggingface/ISWS/data/predictions/bert/2c/probes_1.csv",
+        "labels_filepath": "~/huggingface/ISWS/data/labelled_data/ml25m.csv",
+        "output_filepath": "~/huggingface/ISWS/data/r_values/bert/2c/probes_1.csv"
+    },
+    {
+        "description": "bert: 2c; probes 2",
+        "predictions_filepath": "~/huggingface/ISWS/data/predictions/bert/2c/probes_2.csv",
+        "labels_filepath": "~/huggingface/ISWS/data/labelled_data/ml25m.csv",
+        "output_filepath": "~/huggingface/ISWS/data/r_values/bert/2c/probes_2.csv"
+    },
+    {
+        "description": "bert: 2c; probes 3",
+        "predictions_filepath": "~/huggingface/ISWS/data/predictions/bert/2c/probes_3.csv",
+        "labels_filepath": "~/huggingface/ISWS/data/labelled_data/ml25m.csv",
+        "output_filepath": "~/huggingface/ISWS/data/r_values/bert/2c/probes_3.csv"
     }
+
 ]

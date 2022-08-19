@@ -27,33 +27,42 @@ def main():
         output_dir = pathlib.Path(config["output_dir"]).expanduser()
         default_columns = config["default_columns"]
 
+        print(f"running probes from ... {input_file}")
+
         # setup pipeline
         unmasker = pipeline("fill-mask", model="bert-base-uncased")
 
         # iterate over probe sets, consider each in-turn
         for probe_column in probe_columns:
 
-            # load the csv, with only default columns + specific probe column
-            with open(input_file, "r") as f:
-                df_probe = pd.read_csv(f, sep="\t").loc[
-                    :, default_columns + [probe_column]
-                ]
+            output_file = output_dir / f"{probe_column}.csv"
 
-            # init prediction columns
-            for i in range(1, 6):
-                df_probe[f"prediction_{i}"] = np.nan
+            if output_file.exists():
+                continue
+            else:
 
-            # append predictions to csv
-            tqdm.pandas()
-            df_probe = df_probe.progress_apply(
-                partial(get_predictions, unmasker=unmasker, probe_column=probe_column),
-                axis=1,
-            )
+                # load the csv, with only default columns + specific probe column
+                with open(input_file, "r") as f:
+                    df_probe = pd.read_csv(f, sep="\t").loc[
+                        :, default_columns + [probe_column]
+                    ]
 
-            # save the csv
-            output_dir.mkdir(parents=True, exist_ok=True)
-            with open(output_dir / probe_column, "w") as f:
-                df_probe.to_csv(f, index=False, sep="\t")
+                # init prediction columns
+                for i in range(1, 6):
+                    df_probe[f"prediction_{i}"] = np.nan
+
+                # append predictions to csv
+                print(f"\t{probe_column}")
+                tqdm.pandas()
+                df_probe = df_probe.progress_apply(
+                    partial(get_predictions, unmasker=unmasker, probe_column=probe_column),
+                    axis=1,
+                )
+
+                # save the csv
+                output_dir.mkdir(parents=True, exist_ok=True)
+                with open(output_file, "w") as f:
+                    df_probe.to_csv(f, index=False, sep="\t")
 
 
 def get_predictions(row: pd.Series, *, unmasker: Pipeline, probe_column: str):

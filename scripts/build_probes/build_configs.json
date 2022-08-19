@@ -1,6 +1,6 @@
 [
     {
-        "description": "movies: columns renamed; take first of 'cast members'; semi-colon separated properties; comma separated values",
+        "description": "movies, bert: columns renamed; take first of 'cast members'; semi-colon separated properties; comma separated values",
         "add": [
             "starring",
             "directed by",
@@ -14,13 +14,13 @@
         ],
         "item_name_col": "__name__",
         "input_file": "~/huggingface/ISWS/data/formatted_subset/1/movie_data.csv",
-        "output_file": "~/huggingface/ISWS/data/probes/1a/movie_data.csv",
+        "output_file": "~/huggingface/ISWS/data/probes/bert/1a/movie_data.csv",
         "start_str": "{} is a movie",
         "add_f": "lambda c,v: f'; {c} {v}'",
         "end_str": " of the genre [MASK]."
     },
     {
-        "description": "movies: columns renamed; take first of all; semi-colon separated properties; comma separated values",
+        "description": "movies, bert: columns renamed; take first of 'cast members'; comma separated properties; ' and ' separated values",
         "add": [
             "starring",
             "directed by",
@@ -33,34 +33,34 @@
             "originating from"
         ],
         "item_name_col": "__name__",
-        "input_file": "~/huggingface/ISWS/data/formatted_subset/2/movie_data.csv",
-        "output_file": "~/huggingface/ISWS/data/probes/2a/movie_data.csv",
-        "start_str": "{} is a movie",
-        "add_f": "lambda c,v: f'; {c} {v}'",
-        "end_str": " of the genre [MASK]."
-    },
-    {
-        "description": "movies: columns renamed; take first of all; comma separated properties; ' and ' separated values",
-        "add": [
-            "starring",
-            "directed by",
-            "produced by",
-            "screenwriter",
-            "music by",
-            "edited by",
-            "released",
-            "distributed by",
-            "originating from"
-        ],
-        "item_name_col": "__name__",
-        "input_file": "~/huggingface/ISWS/data/formatted_subset/2/movie_data.csv",
-        "output_file": "~/huggingface/ISWS/data/probes/2b/movie_data.csv",
+        "input_file": "~/huggingface/ISWS/data/formatted_subset/1/movie_data.csv",
+        "output_file": "~/huggingface/ISWS/data/probes/bert/1b/movie_data.csv",
         "start_str": "{} is a movie",
         "add_f": "lambda c,v: f\", {c} {' and '.join([i.strip() for i in v.split(',')])}\"",
         "end_str": " of the genre [MASK]."
     },
     {
-        "description": "movies: columns renamed; take first of all; and separated properties",
+        "description": "movies, bert: columns renamed; take first of all; ' and ' separated properties, comma separated values",
+        "add": [
+            "starring",
+            "directed by",
+            "produced by",
+            "screenwriter",
+            "music by",
+            "edited by",
+            "released",
+            "distributed by",
+            "originating from"
+        ],
+        "item_name_col": "__name__",
+        "input_file": "~/huggingface/ISWS/data/formatted_subset/1/movie_data.csv",
+        "output_file": "~/huggingface/ISWS/data/probes/bert/1c/movie_data.csv",
+        "start_str": "{} is a movie",
+        "add_f": "lambda c,v: f\" and {c} {','.join([i.strip() for i in v.split(',')])}\"",
+        "end_str": " of the genre [MASK]."
+    },
+    {
+        "description": "movies, bert: columns renamed; take first of all; semi-colon separated properties; comma separated values",
         "add": [
             "starring",
             "directed by",
@@ -74,13 +74,153 @@
         ],
         "item_name_col": "__name__",
         "input_file": "~/huggingface/ISWS/data/formatted_subset/2/movie_data.csv",
-        "output_file": "~/huggingface/ISWS/data/probes/2c/movie_data.csv",
+        "output_file": "~/huggingface/ISWS/data/probes/bert/2a/movie_data.csv",
+        "start_str": "{} is a movie",
+        "add_f": "lambda c,v: f'; {c} {v}'",
+        "end_str": " of the genre [MASK]."
+    },
+    {
+        "description": "movies, bert: columns renamed; take first of all; comma separated properties; ' and ' separated values",
+        "add": [
+            "starring",
+            "directed by",
+            "produced by",
+            "screenwriter",
+            "music by",
+            "edited by",
+            "released",
+            "distributed by",
+            "originating from"
+        ],
+        "item_name_col": "__name__",
+        "input_file": "~/huggingface/ISWS/data/formatted_subset/2/movie_data.csv",
+        "output_file": "~/huggingface/ISWS/data/probes/bert/2b/movie_data.csv",
+        "start_str": "{} is a movie",
+        "add_f": "lambda c,v: f\", {c} {' and '.join([i.strip() for i in v.split(',')])}\"",
+        "end_str": " of the genre [MASK]."
+    },
+    {
+        "description": "movies, bert: columns renamed; take first of all; ' and ' separated properties, comma separated values",
+        "add": [
+            "starring",
+            "directed by",
+            "produced by",
+            "screenwriter",
+            "music by",
+            "edited by",
+            "released",
+            "distributed by",
+            "originating from"
+        ],
+        "item_name_col": "__name__",
+        "input_file": "~/huggingface/ISWS/data/formatted_subset/2/movie_data.csv",
+        "output_file": "~/huggingface/ISWS/data/probes/bert/2c/movie_data.csv",
+        "start_str": "{} is a movie",
+        "add_f": "lambda c,v: f\" and {c} {','.join([i.strip() for i in v.split(',')])}\"",
+        "end_str": " of the genre [MASK]."
+    },
+    {
+        "description": "movies, for VJ: columns renamed; take first of 'cast members'; semi-colon separated properties; comma separated values",
+        "add": [
+            "starring",
+            "directed by",
+            "produced by",
+            "screenwriter",
+            "music by",
+            "edited by",
+            "released",
+            "distributed by",
+            "originating from"
+        ],
+        "item_name_col": "__name__",
+        "input_file": "~/huggingface/ISWS/data/formatted_subset/1/movie_data.csv",
+        "output_file": "~/huggingface/ISWS/data/probes/VJ/1a/movie_data.csv",
+        "start_str": "{} is a movie",
+        "add_f": "lambda c,v: f'; {c} {v}'",
+        "end_str": " of the genre"
+    },
+    {
+        "description": "movies, for VJ: columns renamed; take first of 'cast members'; comma separated properties; ' and ' separated values",
+        "add": [
+            "starring",
+            "directed by",
+            "produced by",
+            "screenwriter",
+            "music by",
+            "edited by",
+            "released",
+            "distributed by",
+            "originating from"
+        ],
+        "item_name_col": "__name__",
+        "input_file": "~/huggingface/ISWS/data/formatted_subset/1/movie_data.csv",
+        "output_file": "~/huggingface/ISWS/data/probes/VJ/1b/movie_data.csv",
+        "start_str": "{} is a movie",
+        "add_f": "lambda c,v: f\", {c} {' and '.join([i.strip() for i in v.split(',')])}\"",
+        "end_str": " of the genre"
+    },
+    {
+        "description": "movies, for VJ: columns renamed; take first of all; semi-colon separated properties; comma separated values",
+        "add": [
+            "starring",
+            "directed by",
+            "produced by",
+            "screenwriter",
+            "music by",
+            "edited by",
+            "released",
+            "distributed by",
+            "originating from"
+        ],
+        "item_name_col": "__name__",
+        "input_file": "~/huggingface/ISWS/data/formatted_subset/2/movie_data.csv",
+        "output_file": "~/huggingface/ISWS/data/probes/VJ/2a/movie_data.csv",
+        "start_str": "{} is a movie",
+        "add_f": "lambda c,v: f'; {c} {v}'",
+        "end_str": " of the genre"
+    },
+    {
+        "description": "movies, for VJ: columns renamed; take first of all; comma separated properties; ' and ' separated values",
+        "add": [
+            "starring",
+            "directed by",
+            "produced by",
+            "screenwriter",
+            "music by",
+            "edited by",
+            "released",
+            "distributed by",
+            "originating from"
+        ],
+        "item_name_col": "__name__",
+        "input_file": "~/huggingface/ISWS/data/formatted_subset/2/movie_data.csv",
+        "output_file": "~/huggingface/ISWS/data/probes/VJ/2b/movie_data.csv",
+        "start_str": "{} is a movie",
+        "add_f": "lambda c,v: f\", {c} {' and '.join([i.strip() for i in v.split(',')])}\"",
+        "end_str": " of the genre"
+    },
+    {
+        "description": "movies, for VJ: columns renamed; take first of all; and separated properties",
+        "add": [
+            "starring",
+            "directed by",
+            "produced by",
+            "screenwriter",
+            "music by",
+            "edited by",
+            "released",
+            "distributed by",
+            "originating from"
+        ],
+        "item_name_col": "__name__",
+        "input_file": "~/huggingface/ISWS/data/formatted_subset/2/movie_data.csv",
+        "output_file": "~/huggingface/ISWS/data/probes/VJ/2c/movie_data.csv",
         "start_str": "{} is a movie",
         "add_f": "lambda c,v: f\" and {c} {' and '.join([i.strip() for i in v.split(',')])}\"",
         "end_str": " of the genre [MASK]."
     },
     {
-        "description": "(for VJ) movies: columns renamed; take first of 'cast members'; semi-colon separated properties; comma separated values",
+        "description": "movies, roberta: columns renamed; take first of 'cast members'; semi-colon separated properties; comma separated values",
         "add": [
             "starring",
             "directed by",
@@ -94,13 +234,13 @@
         ],
         "item_name_col": "__name__",
         "input_file": "~/huggingface/ISWS/data/formatted_subset/1/movie_data.csv",
-        "output_file": "~/huggingface/ISWS/data/probes/1a_VJ/movie_data.csv",
+        "output_file": "~/huggingface/ISWS/data/probes/roberta/1a/movie_data.csv",
         "start_str": "{} is a movie",
         "add_f": "lambda c,v: f'; {c} {v}'",
-        "end_str": " of the genre"
+        "end_str": " of the genre <mask>."
     },
     {
-        "description": "(for VJ) movies: columns renamed; take first of 'cast members'; comma separated properties; ' and ' separated values",
+        "description": "movies, roberta: columns renamed; take first of 'cast members'; comma separated properties; ' and ' separated values",
         "add": [
             "starring",
             "directed by",
@@ -114,13 +254,33 @@
         ],
         "item_name_col": "__name__",
         "input_file": "~/huggingface/ISWS/data/formatted_subset/1/movie_data.csv",
-        "output_file": "~/huggingface/ISWS/data/probes/1b_VJ/movie_data.csv",
+        "output_file": "~/huggingface/ISWS/data/probes/roberta/1b/movie_data.csv",
         "start_str": "{} is a movie",
         "add_f": "lambda c,v: f\", {c} {' and '.join([i.strip() for i in v.split(',')])}\"",
-        "end_str": " of the genre"
+        "end_str": " of the genre <mask>."
     },
     {
-        "description": "(for VJ) movies: columns renamed; take first of all; semi-colon separated properties; comma separated values",
+        "description": "movies, roberta: columns renamed; take first of all; ' and ' separated properties, comma separated values",
+        "add": [
+            "starring",
+            "directed by",
+            "produced by",
+            "screenwriter",
+            "music by",
+            "edited by",
+            "released",
+            "distributed by",
+            "originating from"
+        ],
+        "item_name_col": "__name__",
+        "input_file": "~/huggingface/ISWS/data/formatted_subset/1/movie_data.csv",
+        "output_file": "~/huggingface/ISWS/data/probes/roberta/1c/movie_data.csv",
+        "start_str": "{} is a movie",
+        "add_f": "lambda c,v: f\" and {c} {','.join([i.strip() for i in v.split(',')])}\"",
+        "end_str": " of the genre <mask>."
+    },
+    {
+        "description": "movies, roberta: columns renamed; take first of all; semi-colon separated properties; comma separated values",
         "add": [
             "starring",
             "directed by",
@@ -134,13 +294,13 @@
         ],
         "item_name_col": "__name__",
         "input_file": "~/huggingface/ISWS/data/formatted_subset/2/movie_data.csv",
-        "output_file": "~/huggingface/ISWS/data/probes/2a_VJ/movie_data.csv",
+        "output_file": "~/huggingface/ISWS/data/probes/roberta/2a/movie_data.csv",
         "start_str": "{} is a movie",
         "add_f": "lambda c,v: f'; {c} {v}'",
-        "end_str": " of the genre"
+        "end_str": " of the genre <mask>."
     },
     {
-        "description": "(for VJ) movies: columns renamed; take first of all; comma separated properties; ' and ' separated values",
+        "description": "movies, roberta: columns renamed; take first of all; comma separated properties; ' and ' separated values",
         "add": [
             "starring",
             "directed by",
@@ -154,13 +314,13 @@
         ],
         "item_name_col": "__name__",
         "input_file": "~/huggingface/ISWS/data/formatted_subset/2/movie_data.csv",
-        "output_file": "~/huggingface/ISWS/data/probes/2b_VJ/movie_data.csv",
+        "output_file": "~/huggingface/ISWS/data/probes/roberta/2b/movie_data.csv",
         "start_str": "{} is a movie",
         "add_f": "lambda c,v: f\", {c} {' and '.join([i.strip() for i in v.split(',')])}\"",
-        "end_str": " of the genre"
+        "end_str": " of the genre <mask>."
     },
     {
-        "description": "(for VJ) movies: columns renamed; take first of all; and separated properties",
+        "description": "movies, roberta: columns renamed; take first of all; ' and ' separated properties, comma separated values",
         "add": [
             "starring",
             "directed by",
@@ -174,9 +334,9 @@
         ],
         "item_name_col": "__name__",
         "input_file": "~/huggingface/ISWS/data/formatted_subset/2/movie_data.csv",
-        "output_file": "~/huggingface/ISWS/data/probes/2c_VJ/movie_data.csv",
+        "output_file": "~/huggingface/ISWS/data/probes/roberta/2c/movie_data.csv",
         "start_str": "{} is a movie",
-        "add_f": "lambda c,v: f\" and {c} {' and '.join([i.strip() for i in v.split(',')])}\"",
-        "end_str": " of the genre [MASK]."
+        "add_f": "lambda c,v: f\" and {c} {','.join([i.strip() for i in v.split(',')])}\"",
+        "end_str": " of the genre <mask>."
     }
 ]
