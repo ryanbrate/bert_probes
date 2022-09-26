@@ -30,7 +30,7 @@ def main():
         print(f"running probes from ... {input_file}")
 
         # setup pipeline
-        unmasker = pipeline("fill-mask", model="bert-base-uncased")
+        unmasker = pipeline("fill-mask", model=model)
 
         # iterate over probe sets, consider each in-turn
         for probe_column in probe_columns:

@@ -8,7 +8,8 @@ A pipeline to explore wikidata extracts and property co-occurrence, build a subs
     * amend id column header to "ID"
     * amend label column header to "labels"
     * note: this csv is assumed comma separated
-* run:
+
+Run:
 ```
 cd scripts/explore_wikidata_extracts/
 python3 frequency.py  # outputs frequency of each column into CL
@@ -16,7 +17,8 @@ python3 frequency.py  # outputs frequency of each column into CL
 
 * update "scripts/explore_wikidata_extracts/stats_configs.json", each config run separately
 python3 stats.py  # examines coincident columns of complete data, for cols specified
-* run: 
+
+Run: 
 ```
 python3 combinations.py
 ```
@@ -27,7 +29,8 @@ python3 combinations.py
     Create a subset of the wikidata extracts, retaining only those datapoints which have full data for all of the selected wikidata properties of interest.
 
 * Update "scripts/build_extracts_subset/build_subset_configs.json", each config run separately
-* run:
+
+Run:
 ```
 cd scripts/build_extracts_subset/
 python3 build_subset.py
@@ -45,7 +48,8 @@ I.e.:
 * The probes are formed by appending "$(wikidata property name) $(datapoint property value)", hence we may wish to format the column name to something more natural language appropriate
 
 * Some of the property values, e.g., date are not in a very palatable format
-* run
+
+Run
 ```
 cd format_wikidata_extracts
 python3 format_extracts.py
@@ -57,8 +61,7 @@ The resultant csv is comma separated
 
 # 4. Build probe combinations
 
-* amend the configs in "scripts/build_probes/build_configs.json"
-* run: 
+Run:
 ```
 cd scripts/build_probes
 python3 build_probes.py
@@ -70,14 +73,33 @@ The resultant csv is tab separated
 
 # 5. Probe PLMs
 
+Run:
+```
+cd scripts/predict
+python3 predict.py
+```
+
+The resultant overwrites any existing
+resultant csv is Tab separated
 
 
 # 6. Calculate r@1 and r@5 values
 
-* amend "scripts/r_values/r_configs.json"
-
+Run:
 ```
 cd scripts/r_values
 python3 r_values
 ```
 
+The resultant overwrites any existing
+resultant csv is Tab separated
+
+# 7. sign test 
+
+Run:
+```
+cd scripts/sign_test
+python3 sign_test
+```
+
+Reports result in the terminal

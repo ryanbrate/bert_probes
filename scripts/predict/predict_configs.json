@@ -1,49 +1,5 @@
 [
     {
-        "description": "movies, bert: columns renamed; take first of 'cast members'; semi-colon separated properties; comma separated values",
-        "model": "bert-base-uncased",
-        "default_columns": [
-            "ID",
-            "__name__"
-        ],
-        "probe_columns": [
-            "probes_0",
-            "probes_1",
-            "probes_2",
-            "probes_3",
-            "probes_4",
-            "probes_5",
-            "probes_6",
-            "probes_7",
-            "probes_8",
-            "probes_9"
-        ],
-        "input_file": "~/huggingface/ISWS/data/probes/bert/1a/movie_data.csv",
-        "output_dir": "~/huggingface/ISWS/data/predictions/bert/1a"
-    },
-    {
-        "description": "movies, bert: columns renamed; take first of all; semi-colon separated properties",
-        "model": "bert-base-uncased",
-        "default_columns": [
-            "ID",
-            "__name__"
-        ],
-        "probe_columns": [
-            "probes_0",
-            "probes_1",
-            "probes_2",
-            "probes_3",
-            "probes_4",
-            "probes_5",
-            "probes_6",
-            "probes_7",
-            "probes_8",
-            "probes_9"
-        ],
-        "input_file": "~/huggingface/ISWS/data/probes/bert/2a/movie_data.csv",
-        "output_dir": "~/huggingface/ISWS/data/predictions/bert/2a"
-    },
-    {
         "description": "movies, bert: columns renamed; take first of all; comma separated properties",
         "model": "bert-base-uncased",
         "default_columns": [
@@ -88,52 +44,8 @@
         "output_dir": "~/huggingface/ISWS/data/predictions/bert/2c"
     },
     {
-        "description": "movies, roberta: columns renamed; take first of 'cast members'; semi-colon separated properties; comma separated values",
-        "model": "roberta-base",
-        "default_columns": [
-            "ID",
-            "__name__"
-        ],
-        "probe_columns": [
-            "probes_0",
-            "probes_1",
-            "probes_2",
-            "probes_3",
-            "probes_4",
-            "probes_5",
-            "probes_6",
-            "probes_7",
-            "probes_8",
-            "probes_9"
-        ],
-        "input_file": "~/huggingface/ISWS/data/probes/roberta/1a/movie_data.csv",
-        "output_dir": "~/huggingface/ISWS/data/predictions/roberta/1a"
-    },
-    {
-        "description": "movies, roberta: columns renamed; take first of all; semi-colon separated properties",
-        "model": "robert",
-        "default_columns": [
-            "ID",
-            "__name__"
-        ],
-        "probe_columns": [
-            "probes_0",
-            "probes_1",
-            "probes_2",
-            "probes_3",
-            "probes_4",
-            "probes_5",
-            "probes_6",
-            "probes_7",
-            "probes_8",
-            "probes_9"
-        ],
-        "input_file": "~/huggingface/ISWS/data/probes/roberta/2a/movie_data.csv",
-        "output_dir": "~/huggingface/ISWS/data/predictions/roberta/2a"
-    },
-    {
         "description": "movies, roberta: columns renamed; take first of all; comma separated properties",
-        "model": "bert-base-uncased",
+        "model": "roberta-large",
         "default_columns": [
             "ID",
             "__name__"
@@ -151,11 +63,11 @@
             "probes_9"
         ],
         "input_file": "~/huggingface/ISWS/data/probes/roberta/2b/movie_data.csv",
-        "output_dir": "~/huggingface/ISWS/data/predictions/roberta/2b"
+        "output_dir": "~/huggingface/ISWS/data/predictions/roberta-large/2b"
     },
     {
         "description": "movies, roberta: columns renamed; take first of all; ' and ' separated properties",
-        "model": "bert-base-uncased",
+        "model": "roberta-large",
         "default_columns": [
             "ID",
             "__name__"
@@ -173,7 +85,7 @@
             "probes_9"
         ],
         "input_file": "~/huggingface/ISWS/data/probes/roberta/2c/movie_data.csv",
-        "output_dir": "~/huggingface/ISWS/data/predictions/roberta/2c"
+        "output_dir": "~/huggingface/ISWS/data/predictions/roberta-large/2c"
     }
 
 
