@@ -4,7 +4,7 @@
 import json
 import pathlib
 import pandas as pd
-from scipy.stats import binom_test
+from scipy.stats import binom_test, binom
 
 def main():
 
@@ -39,10 +39,12 @@ def main():
 
             # binom test
             p_value: float = binom_test(x, n, p=0.5, alternative=alternative)
-            print(f"{desc}: x={x}, n={n}, p_value = {p_value}")
 
+            # power
+            cv = binom.ppf(0.95+1e-12,n,p=0.5) # i.e., if k >= cv then significant
+            power = 1-binom.cdf(cv, n, p=x/n)
+            print(f"{desc}: x={x}, n={n}, p_value = {p_value}, power={power}")
 
-        
         
 if __name__ == "__main__":
     main()
