@@ -1,0 +1,58 @@
+[
+    {
+        "description": "roberta-large; type a: probe 7 vs probe 0; R@1",
+        "greater_set_filepath": "~/huggingface/ISWS/data/r_values/roberta-large/2b/probes_7.csv",
+        "lesser_set_filepath": "~/huggingface/ISWS/data/r_values/roberta-large/2b/probes_0.csv",
+        "alternative": "greater",
+        "column": "R@1"
+    },
+    {
+        "description": "roberta-large; type a: probe 7 vs probe 0; R@5",
+        "greater_set_filepath": "~/huggingface/ISWS/data/r_values/roberta-large/2b/probes_7.csv",
+        "lesser_set_filepath": "~/huggingface/ISWS/data/r_values/roberta-large/2b/probes_0.csv",
+        "alternative": "greater",
+        "column": "R@5"
+    },
+    {
+        "description": "roberta-large; type b: probe 9 vs probe 0; R@1",
+        "greater_set_filepath": "~/huggingface/ISWS/data/r_values/roberta-large/2c/probes_9.csv",
+        "lesser_set_filepath": "~/huggingface/ISWS/data/r_values/roberta-large/2c/probes_0.csv",
+        "alternative": "greater",
+        "column": "R@1"
+    },
+    {
+        "description": "roberta-large; type b: probe 9 vs probe 0; R@5",
+        "greater_set_filepath": "~/huggingface/ISWS/data/r_values/roberta-large/2c/probes_9.csv",
+        "lesser_set_filepath": "~/huggingface/ISWS/data/r_values/roberta-large/2c/probes_0.csv",
+        "alternative": "greater",
+        "column": "R@5"
+    },
+    {
+        "description": "bert; type a: probe 2 vs probe 0; R@1",
+        "greater_set_filepath": "~/huggingface/ISWS/data/r_values/bert/2b/probes_2.csv",
+        "lesser_set_filepath": "~/huggingface/ISWS/data/r_values/bert/2b/probes_0.csv",
+        "alternative": "greater",
+        "column": "R@1"
+    },
+    {
+        "description": "bert; type a: probe 2 vs probe 0; R@5",
+        "greater_set_filepath": "~/huggingface/ISWS/data/r_values/bert/2b/probes_2.csv",
+        "lesser_set_filepath": "~/huggingface/ISWS/data/r_values/bert/2b/probes_0.csv",
+        "alternative": "greater",
+        "column": "R@5"
+    },
+    {
+        "description": "bert; type b: probe 2 vs probe 0; R@1",
+        "greater_set_filepath": "~/huggingface/ISWS/data/r_values/bert/2c/probes_2.csv",
+        "lesser_set_filepath": "~/huggingface/ISWS/data/r_values/bert/2c/probes_0.csv",
+        "alternative": "greater",
+        "column": "R@1"
+    },
+    {
+        "description": "bert; type b: probe 2 vs probe 0; R@5",
+        "greater_set_filepath": "~/huggingface/ISWS/data/r_values/bert/2c/probes_2.csv",
+        "lesser_set_filepath": "~/huggingface/ISWS/data/r_values/bert/2c/probes_0.csv",
+        "alternative": "greater",
+        "column": "R@5"
+    }
+  ]
