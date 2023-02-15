@@ -94,12 +94,12 @@ python3 r_values
 The resultant overwrites any existing
 resultant csv is Tab separated
 
-# 7. sign test 
+# 7. t-test 
 
 Run:
 ```
 cd scripts/sign_test
-python3 sign_test
+python3 t_test.py
 ```
 
 Reports result in the terminal
