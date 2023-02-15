@@ -1,4 +1,7 @@
-A pipeline to explore wikidata extracts and property co-occurrence, build a subset of wikidata, build plm mask prediction statements, probe hugging face models and calculate resulting R@n scores.
+A pipeline to explore wikidata extracts and property co-occurrence, build a subset of wikidata, build plm mask prediction statements, probe hugging face models and calculate resulting R@n scores. *The pipelines requires separately extracted csv of wikidata extracts*, as per instructions, below:
+
+For the paper link [Improving Language Model Predictions via Prompts
+Enriched with Knowledge Graphs][https://www.aifb.kit.edu/images/3/3a/Brate2022Improving.pdf]
 
 # 1. Explore property co-occurrence counts for wikidata extracts
 
@@ -98,7 +101,7 @@ resultant csv is Tab separated
 
 Run:
 ```
-cd scripts/sign_test
+cd scripts/t_test
 python3 t_test.py
 ```
 
